@@ -1,15 +1,15 @@
-// import {useState} from 'react'
-// import '../App.css'
+import {useState} from 'react'
+import '../App.css'
 
-// function CreateForm({postEmployee, departments}){
-//     const [formData, setFormData] = useState({
-//         name:'',
-//         age: '',
-//         gender: '',
-//         phone: '',
-//         department_id:'',
-//         active: true
-//     })
+function CreateForm({postEmployee, departments}){
+    const [formData, setFormData] = useState({
+        name:'',
+        age: '',
+        gender: '',
+        phone: '',
+        department_id:'',
+        active: true
+    })
 //     const handleChange = (e) => {
 //         setFormData({...formData, [e.target.name]:e.target.value})
 //     }
