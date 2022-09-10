@@ -18,20 +18,20 @@ function App() {
     .then(setDepartments)
   },[])
 
-//   //Creates a employee
-//   const postEmployee = (employee) => {
-//     fetch('http://localhost:9292/employees',{
-//       method:'POST',
-//       headers:{
-//         'Content-Type':'application/json',
-//       },
-//       body: JSON.stringify(employee)
-//     })
-//     .then(res => res.json())
-//     .then(newEmployee => {
-//       setEmployees([newEmployee,...employees])
-//     })
-//   }
+  //Creates a employee
+  const postEmployee = (employee) => {
+    fetch('http://localhost:9292/employees',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+      },
+      body: JSON.stringify(employee)
+    })
+    .then(res => res.json())
+    .then(newEmployee => {
+      setEmployees([newEmployee,...employees])
+    })
+  }
 // //patches employee
 //   const patchEmployee = (employee) => {
 //     fetch(`http://localhost:9292/employees/${employee.id}`,{
