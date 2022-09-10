@@ -52,17 +52,17 @@ function App() {
       }))
     })
   } 
-// //Deletes patient
-//   const handleDelete = (id) => {
-//     fetch(`http://localhost:9292/employees/${id}`,{
-//       method:'DELETE',
-//       headers:{'Content-Type':'application/json'}
-//     })
-//     .then(res => res.json())
-//     .then(() => {
-//       setEmployees(employees.filter(st => st.id !== id))
-//     })
-//   }
+//Deletes patient
+  const handleDelete = (id) => {
+    fetch(`http://localhost:9292/employees/${id}`,{
+      method:'DELETE',
+      headers:{'Content-Type':'application/json'}
+    })
+    .then(res => res.json())
+    .then(() => {
+      setEmployees(employees.filter(st => st.id !== id))
+    })
+  }
 //   return (
 //     <div className="App">
 //       <div>
@@ -71,5 +71,5 @@ function App() {
 //       </div> 
 //     </div> 
 //   );
-// }
-// export default App;
+}
+export default App;
