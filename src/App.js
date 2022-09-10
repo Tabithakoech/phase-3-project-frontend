@@ -63,13 +63,13 @@ function App() {
       setEmployees(employees.filter(st => st.id !== id))
     })
   }
-//   return (
-//     <div className="App">
-//       <div>
-//       <CreateForm postEmployee={postEmployee} departments={departments}/>
-//       {employees.map(st => <Card employee={st} patchEmployee={patchEmployee} handleDelete={handleDelete} key={`${st.id}${st.name}`}/>)}
-//       </div> 
-//     </div> 
-//   );
+  return (
+    <div className="App">
+      <div>
+      <CreateForm postEmployee={postEmployee} departments={departments}/>
+      {employees.map(st => <Card employee={st} patchEmployee={patchEmployee} handleDelete={handleDelete} key={`${st.id}${st.name}`}/>)}
+      </div> 
+    </div> 
+  );
 }
 export default App;
