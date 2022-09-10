@@ -10,9 +10,9 @@ function CreateForm({postEmployee, departments}){
         department_id:'',
         active: true
     })
-//     const handleChange = (e) => {
-//         setFormData({...formData, [e.target.name]:e.target.value})
-//     }
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]:e.target.value})
+    }
 
 //     const handleSubmit = (e) => {
 //         e.preventDefault()
