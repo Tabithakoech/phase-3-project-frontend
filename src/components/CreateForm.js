@@ -14,10 +14,10 @@ function CreateForm({postEmployee, departments}){
         setFormData({...formData, [e.target.name]:e.target.value})
     }
 
-//     const handleSubmit = (e) => {
-//         e.preventDefault()
-//         postEmployee(formData)
-//     } 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        postEmployee(formData)
+    } 
 //     return(
 //         <div className='employee_form'>
 //             <h1 className='title'>Employee Database</h1>
