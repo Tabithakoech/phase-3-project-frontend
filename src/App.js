@@ -32,26 +32,26 @@ function App() {
       setEmployees([newEmployee,...employees])
     })
   }
-// //patches employee
-//   const patchEmployee = (employee) => {
-//     fetch(`http://localhost:9292/employees/${employee.id}`,{
-//       method:'PATCH',
-//       headers:{
-//         'Content-Type':'application/json'
-//       },
-//       body: JSON.stringify({...employee, active: false})
-//     })
-//     .then(res => res.json())
-//     .then(data => {
-//       setEmployees(employees.map(st => {
-//         if(st.id === data.id){
-//           return data
-//         } else {
-//           return st
-//         }
-//       }))
-//     })
-//   } 
+//patches employee
+  const patchEmployee = (employee) => {
+    fetch(`http://localhost:9292/employees/${employee.id}`,{
+      method:'PATCH',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify({...employee, active: false})
+    })
+    .then(res => res.json())
+    .then(data => {
+      setEmployees(employees.map(st => {
+        if(st.id === data.id){
+          return data
+        } else {
+          return st
+        }
+      }))
+    })
+  } 
 // //Deletes patient
 //   const handleDelete = (id) => {
 //     fetch(`http://localhost:9292/employees/${id}`,{
