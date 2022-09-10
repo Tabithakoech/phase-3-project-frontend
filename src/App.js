@@ -1,22 +1,22 @@
-// import './App.css';
-// import { useState, useEffect } from 'react'
-// import Card from './components/Card';
-// import CreateForm from './components/CreateForm';
+import './App.css';
+import { useState, useEffect } from 'react'
+import Card from './components/Card';
+import CreateForm from './components/CreateForm';
 
-// function App() {
-//   const [employees, setEmployees] = useState([])
-//   const [departments, setDepartments] = useState([])
+function App() {
+  const [employees, setEmployees] = useState([])
+  const [departments, setDepartments] = useState([])
 
-//   useEffect(()=> {
-//   //Gets departments and employees
-//     fetch('http://localhost:9292/employees')
-//     .then(res => res.json())
-//     .then(setEmployees)
+  useEffect(()=> {
+  //Gets departments and employees
+    fetch('http://localhost:9292/employees')
+    .then(res => res.json())
+    .then(setEmployees)
     
-//     fetch('http://localhost:9292/departments')
-//     .then(res => res.json())
-//     .then(setDepartments)
-//   },[])
+    fetch('http://localhost:9292/departments')
+    .then(res => res.json())
+    .then(setDepartments)
+  },[])
 
 //   //Creates a employee
 //   const postEmployee = (employee) => {
