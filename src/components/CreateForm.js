@@ -8,6 +8,7 @@ function CreateForm({postEmployee, departments}){
         gender: '',
         phone: '',
         department_id:'',
+        department_name:'',
         active: true
     })
     const handleChange = (e) => {
@@ -40,14 +41,14 @@ function CreateForm({postEmployee, departments}){
                 </label>
                 <label>
                 Department:
-                <input type="text" name="department_id" value={formData.department_id} onChange={handleChange}/>
+                {/* <input type="text" name="department_id" value={formData.department_id} onChange={handleChange}/> */}
 
-                {/* <select name="department_id" onChange={handleChange}>
+                <select name="department_id" onChange={handleChange}>
                     <option>Select A Department</option>
                     {departments.map(s => <option value={s.id}>{s.department_name}</option>)}
-                </select> */}
+                </select>
                 </label>
-                <input className='submit_btn' type="submit" value="Submit" />
+                <input className='submit_btn' type="submit" value="Add Employee" />
             </form>
         </div>
         

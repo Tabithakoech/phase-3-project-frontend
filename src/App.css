@@ -1,12 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Nunito:wght@200&family=Pacifico&family=Playfair+Display:ital,wght@1,500&family=Yanone+Kaffeesatz:wght@300&display=swap');
 *{
-  color: black;
+  color: white;
   font-weight: 800;
 }
 .App {
   text-align: center;
-  background-color: #EEEEEE;
+  background-color: #3F4E4F;
   font-family: 'Nunito', sans-serif;}
 
 .App-logo {
@@ -51,6 +51,7 @@ height: 100px;
 input{
   border-radius: 10px;
   padding: 10px;
+  color: black;
 
 }
 
@@ -69,11 +70,12 @@ margin: 10px;
 }
 select{
   border-radius: 10px;
-  margin: 3px;
-  padding: 10px;
+  padding: 5px;
+  color: black;
 
 }
 .employee_card button{
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
+  color: black;
 }

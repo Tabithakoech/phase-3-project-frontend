@@ -9,7 +9,7 @@ function Card({employee, patchEmployee, handleDelete}){
             <p>Age: {employee.age}</p>
             <p>Gender: {employee.gender}</p>
             <p>Phone Number: {employee.phone}</p>
-            <p>Department: {employee.department_name}</p>
+            <p>Department: {employee.department.department_name}</p>
             {employee.active? <button onClick={()=> patchEmployee(employee)}>Deactivate Employee</button> : <p>Employee is no longer active</p>}
             <button onClick={() => handleDelete(employee.id)}>Delete Employee</button>
           </div>
